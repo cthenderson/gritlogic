@@ -3,91 +3,147 @@
   <head>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link href="assets/css/bootstrap.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <style>
+
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
-      #contact > div {
-        width: 33%;
+
+      #contact > div, a {
+        width: 30%;
         font-size: large;
+        color: #000;
       }
-      .sections > div, h2 {
-        padding-bottom: 10px;
-        text-align: left;
+
+      .sections {
+        height: 800px;
       }
+
+      .section {
+        position: relative;
+        float: left;
+        height: 50%;
+        width: 300px;
+        margin: 2% 2% 2% 2%;
+        text-align: center;
+      }
+
+      .section > div {
+        text-align: center;
+      }
+
+      .footer {
+        padding-left: 80px;
+        float: left;
+      }
+      
+      i {
+        margin: 10px 10px 10px 10px;  
+      }
+
+      .footer .social {
+        width: 100px;
+        float: left;
+        margin: 0 .5px 0 .5px
+      }
+
+      .footer .contact {
+        width: 300px;
+        float: left;
+        margin: 0 .5px 0 .5px
+      }
+
+      .footer > a {
+        float: left;
+        font-size: large;
+        color: #000;
+      }
+
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
   </head>
   <body>
 
       <div class="container">
-        <div id="contact" style="float:left; clear:left; width: 100%; margin-bottom: 10px;">
-          <div style="float:left;"><a href="mailto:inquiries@gritlogic.com?Subject=Inquiry">inquiries@gritlogic.com</a></div>
-          <div></div>
-          <div style="float:right;"><a href="tel:405-673-4088">405-673-4088</a></div>
-        </div>
-
+        
         <div style="width:50%;">
           <div id="home" style="text-align:right;" ></div>
           <div style=""><img src="assets/imgs/gl2.png" width="100%"/></div>
         </div>
         <div style="float:left; clear:left;" class="sections">
-          <h2 style="padding-bottom: 10px;"> The Value of Grit </h2>
-          <div class='panel'>
+          <h2 style="padding-bottom: 10px; text-align: center; color: grey;"> The Value of Grit </h2>
+            <span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+          <div class='well section'>
+            <i class="fa fa-flash fa-3x"></i>
             <h4> Speed </h4>
             <p>
-            The ability to explore your existing data and incorporate new data sources quickly is key in business today.
-            More important is the ability to do that sooner rather than later. Our data integration services
-            and our data tools were built with speed in mind. Our goal is to get your data into your hands as
-            soon as possible without the risk and capital intensive investment that many data company's require
-            because of the outdated, cumbersome methodologies that they subscribe to.
+            <b>You need to be able to explore and incorporate all of your data sources quickly and reliably.</b>
+            Our data integration services and our data tools were built with speed in mind. Our goal is to get
+            your data into your hands as soon as possible without the risk and capital intensive investment that
+            many data company's require because of the outdated, cumbersome methodologies that they subscribe to.
             </p>
           </div>
-          <div>
+          <div class="well section">
+            <i class="fa fa-magnet fa-3x"></i>
             <h4> Simplicity </h4>
             <p>
-            It is easy to overcomplicate data solutions. There are many problems to solve and many ways to solve them. We believe
+            <b>It is easy to overcomplicate data solutions.</b> There are many problems to solve and many ways to solve them. We believe
             in not only finding the best solution, but also the simplest solution. We don't try to provide you with monolothic
             software packages that solve problems and answer questions that you don't have. We give you what you need, when you need
             it so that you can get back to business.
             </p>
           </div>
-          <div>
+          <div class="well section">
+            <i class="fa fa-gears fa-3x"></i>
             <h4> Automation </h4>
             <p>
-            You've done nothing if you haven't scaled. Having your processes automated is a key factor in building
+            <b>You've done nothing if you haven't scaled.</b> Having your processes automated is a key factor in building
             the economies of scale to outpace the competition. Our integration and analysis solutions are built to 
             be reproduceable, scaleable, and reliable. In short, we ensure the gains you see by implementing our
             solutions aren't diminished by the cost of their operation.
             </p>
-          </div>
-          <div>
-            <h4> Analysis </h4>
+          </div >
+          <div class="well section">
+            <i class="fa fa-line-chart fa-3x"></i>
+            <h4> Insight </h4>
             <p>
-            We do reporting. Everyone does reporting. But, we pride ourselves on our analyses. Our analysts are some of
-            the best in the business, and they deliver solutions that are cutting edge and provide you with much more
-            insight than a list reports or a bunch of sums and averages can.
+            <b>We do reporting. Then again, everyone does reporting.</b> What we strive for is insight. We want you to truly
+            understand your data. We provide clear, concise visualizations that provide intuition about how your data moves
+            through your organization's ecosystem. We deliver real-time dashboards that inform every decision you make during
+            your day-to-day. Once today is taken care of, we deliver the analytics to help you understand if you are achieving
+            your long term objectives and milestones.
             </p>
           </div>
-          <div>
+          <div class="well section">
+            <i class="fa fa-database fa-3x"></i>
             <h4> Storage </h4>
             <p>
-            Storing data can be capital intensive if that's not what you do as a company. It is often better to utilize
-            storage as a service rather than worrying about the hardware maintenance and software licensing required to
-            maintain your own data center. We only charge you for what you use. This flexibility allows your organization
-            to quickly scale your data storage needs without the time and capital requirements of the DIY approach.
+            <b>Storing data on-site is expensive.</b> It is often better to utilize storage as a service rather than worrying about
+            the hardware maintenance and software licensing required to maintain your own data center. We only charge you for
+            what you use. This flexibility allows your organization to quickly scale your data storage needs without the time
+            and capital requirements of the DIY approach.
             </p>
           </div>
-          <div>
+          <div class="well section">
+            <i class="fa fa-lock fa-3x"></i>
             <h4> Security </h4>
             <p>
-            Making sure that your data is secure is key. We offer security consulting and solutions to ensure that your data
+            <b>Making sure that your data is secure is key.</b> We offer security consulting and solutions to ensure that your data
             is safe. We have full-time security professionals that understand your data security needs. Whether you are
             managing your data on-site or in the cloud, we can make sure that it is protected.
             </p>
-          </div>
-        </div>
+         </div>
+         <div class="footer">
+           <div class="contact"><i class="fa fa-envelope fa fa-lg"></i><a href="mailto:inquiries@gritlogic.com?Subject=Inquiry">inquiries@gritlogic.com</a></div>
+           <div class="social"><i class="fa fa-twitter fa-3x"></i></div>
+           <div class="social"><i class="fa fa-facebook fa-3x"></i></div>
+           <div class="social"><i class="fa fa-linkedin fa-3x"></i></div>
+           <div class="contact"><i class="fa fa-phone fa fa-lg"></i><a style="margin-left: 10px;" href="tel:405-673-4088">405-673-4088</a></div>
+         </div>
+
+       </div>
       </div>
   </body>
 </html>
